@@ -22,6 +22,16 @@ public class Demo
 
         // Display health using getter
         Console.WriteLine($"{human.Name}'s health: {human.GetHealth()}");
+
+        Goblin haris = new Goblin("haris", "Diamond Armor", 100);
+        Console.WriteLine($"{haris.Name} bolesni jaran");
+
+        Console.WriteLine(haris.getAbility());
+
+        haris.Talk();
+        haris.alterAbility("velika kosa");
+
+        Console.WriteLine(haris.getAbility());
     }
 
 }
